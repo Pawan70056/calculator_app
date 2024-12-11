@@ -1,6 +1,5 @@
-// import 'package:assignment/pages/grid_view_page.dart';
-import 'package:calculator/views/calculator_view.dart';
 import 'package:flutter/material.dart';
+import 'screens/calculator_view.dart';
 
 void main() {
   runApp(const MyApp());
@@ -12,12 +11,10 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Calculator App',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: const CalculatorView(),
       debugShowCheckedModeBanner: false,
+      title: 'Calculator App',
+      theme: ThemeData(primarySwatch: Colors.amber),
+      home: const CalculatorView(),
     );
   }
 }
